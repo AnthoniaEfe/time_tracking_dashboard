@@ -1,91 +1,139 @@
-
-import './App.css'
+import "./styles/styles.scss"
+import ellipsis from "./assets/icon-ellipsis.svg";
+import profileImg from "./assets/image-jeremy.png";
+import exercise from "./assets/icon-exercise.svg";
+import play from "./assets/icon-play.svg";
+import selfCare from "./assets/icon-self-care.svg";
+import social from "./assets/icon-social.svg";
+import study from "./assets/icon-study.svg";
+import work from "./assets/icon-work.svg";
 
 function App() {
 
 
   return (
-    <div>
+    <main>
+      <div className="user-card">
+        <div className="user-info">
+          <img src={profileImg} alt="profile image" />
+          <div>
+            <p>Report for</p>
+            <h1>Jeremy Robson</h1>
+        </div>
 
-    Report for Jeremy Robson Daily Weekly Monthly Work 5hrs
-      {/* <!-- daily --> */}
-      Previous - 7hrs
-      {/* <!-- daily --> */}
-      32hrs
-      {/* <!-- weekly --> */}
-      Previous - 36hrs
-      {/* <!-- weekly --> */}
-      103hrs
-      {/* <!-- monthly --> */}
-      Previous - 128hrs
-      {/* <!-- monthly --> */}
+        <div className="frequency">
+          <button id="daily">Daily</button>
+          <button id="weekly">Weekly</button>
+          <button id="monthly">Monthly</button>
+        </div>
+        </div>
+      </div>
 
-      Play 1hr
-      {/* <!-- daily --> */}
-      Previous - 2hrs
-      {/* <!-- daily --> */}
-      10hrs
-      {/* <!-- weekly --> */}
-      Previous - 8hrs
-      {/* <!-- weekly --> */}
-      23hrs
-      {/* <!-- monthly --> */}
-      Previous - 29hrs
-      {/* <!-- monthly --> */}
+      <div className="card">
+        <div className="decoration">
+          <img src={work} alt="work" />
+          </div>
 
-      Study 0hrs
-      {/* <!-- daily --> */}
-      Previous - 1hr
-      {/* <!-- daily --> */}
-      4hrs
-      {/* <!-- weekly --> */}
-      Previous - 7hrs
-      {/* <!-- weekly --> */}
-      13hrs
-      {/* <!-- monthly --> */}
-      Previous - 19hrs
-      {/* <!-- monthly --> */}
+        <div className="card-info">
+          <div className="activity">
+            <p className="activity-name"><strong>Work</strong></p>
+           <img src={ellipsis} alt="ellipsis" />
+            </div>
 
-      Exercise 1hr
-      {/* <!-- daily --> */}
-      Previous - 1hr
-      {/* <!-- daily --> */}
-      4hrs
-      {/* <!-- weekly --> */}
-      Previous - 5hrs
-      {/* <!-- weekly --> */}
-      11hrs
-      {/* <!-- monthly --> */}
-      Previous - 18hrs
-      {/* <!-- monthly --> */}
+            <div className="stats">
+              <p className="current-time">32hrs</p>
+              <p className="previous-time">Last week - 36hrs</p>
+            </div>
+        </div>
+      </div>    
+      
+      <div className="card">
+        <div className="decoration">
+          <img src={play} alt="work" />
+          </div>
 
-      Social 1hr
-      {/* <!-- daily --> */}
-      Previous - 3hrs
-      {/* <!-- daily --> */}
-      5hrs
-      {/* <!-- weekly --> */}
-      Previous - 10hrs
-      {/* <!-- weekly --> */}
-      21hrs
-      {/* <!-- monthly --> */}
-      Previous - 23hrs
-      {/* <!-- monthly --> */}
+        <div className="card-info">
+          <div className="activity">
+            <p className="activity-name"><strong>Work</strong></p>
+           <img src={ellipsis} alt="ellipsis" />
+            </div>
 
-      Self Care 0hrs
-      {/* <!-- daily --> */}
-      Previous - 1hr
-      {/* <!-- daily --> */}
-      2hrs
-      {/* <!-- weekly --> */}
-      Previous - 2hrs
-      {/* <!-- weekly --> */}
-      7hrs
-      {/* <!-- monthly --> */}
-      Previous - 11hrs
-      {/* <!-- monthly --> */}
-    
-    </div>
+            <div className="stats">
+              <p className="current-time">32hrs</p>
+              <p className="previous-time">Last week - 36hrs</p>
+            </div>
+        </div>
+      </div>    
+      <div className="card">
+        <div className="decoration">
+          <img src={study} alt="work" />
+          </div>
+
+        <div className="card-info">
+          <div className="activity">
+            <p className="activity-name"><strong>Work</strong></p>
+           <img src={ellipsis} alt="ellipsis" />
+            </div>
+
+            <div className="stats">
+              <p className="current-time">32hrs</p>
+              <p className="previous-time">Last week - 36hrs</p>
+            </div>
+        </div>
+      </div>    
+      <div className="card">
+        <div className="decoration">
+          <img src={exercise} alt="work" />
+          </div>
+
+        <div className="card-info">
+          <div className="activity">
+            <p className="activity-name"><strong>Work</strong></p>
+           <img src={ellipsis} alt="ellipsis" />
+            </div>
+
+            <div className="stats">
+              <p className="current-time">32hrs</p>
+              <p className="previous-time">Last week - 36hrs</p>
+            </div>
+        </div>
+      </div>    
+      <div className="card">
+        <div className="decoration">
+          <img src={social} alt="work" />
+          </div>
+
+        <div className="card-info">
+          <div className="activity">
+            <p className="activity-name"><strong>Work</strong></p>
+           <img src={ellipsis} alt="ellipsis" />
+            </div>
+
+            <div className="stats">
+              <p className="current-time">32hrs</p>
+              <p className="previous-time">Last week - 36hrs</p>
+            </div>
+        </div>
+      </div>    
+      <div className="card">
+        <div className="decoration">
+          <img src={selfCare} alt="work" />
+          </div>
+
+        <div className="card-info">
+          <div className="activity">
+            <p className="activity-name"><strong>Work</strong></p>
+           <img src={ellipsis} alt="ellipsis" />
+            </div>
+
+            <div className="stats">
+              <p className="current-time">32hrs</p>
+              <p className="previous-time">Last week - 36hrs</p>
+            </div>
+        </div>
+      </div>      
+
+    </main>
   )
 }
 
