@@ -51,7 +51,7 @@ main {
 
 #grid-container{
   display: grid;
-  grid-template-columns: 0.9fr;
+  grid-template-columns: 1fr;
   grid-template-rows: auto;
  place-items: center;
   margin:0 auto;
@@ -97,13 +97,13 @@ main {
     .user-freq{
       @include flex-center;
       flex-direction: row;
-      gap:1rem;
+      gap:0.5rem;
       width: 100%;
       padding: 1rem;
       border-radius: 20px;
     
     button{
-      font-size: 1.25rem;
+      font-size: 1rem;
       background-color: transparent;
       padding: 0.5rem 1rem;
       border:none;
@@ -165,26 +165,33 @@ main {
     font-size: 2rem;
     font-weight: 400;
   }
+
+  .previous-time{
+    color: $desaturated-blue;
+    font-weight: 300;
+  }
   }
 }
 
-#work-card{
-    background-color: $light-red-work;
+#Work{
+    background:$light-red-work url("../assets/icon-work.svg") no-repeat ;
 }
-#play-card{
-    background-color:$soft-blue;
+#Play{
+    background:$soft-blue url("../assets/icon-play.svg") no-repeat;
 }
-#study-card{
-    background-color: $light-red-study;
+#Study{
+    background: $light-red-study url("../assets/icon-study.svg") no-repeat;
 }
-#exercise-card{
-    background-color: $lime-green-exercise;
+#Exercise{
+    background: $lime-green-exercise url("../assets/icon-exercise.svg") no-repeat;
 }
-#social-card{
-    background-color: $violet-social;
+#Social{
+    background: $violet-social url("../assets/icon-social.svg") no-repeat;
 }
-#self-care-card{
-    background-color: $soft-orange-selfcare;
+
+// escaping special space character from the id
+[id="Self Care"]{
+    background: $soft-orange-selfcare url("../assets/icon-self-care.svg") no-repeat;
 }
 
 @media screen and (min-width:735px){
@@ -217,15 +224,17 @@ main {
       flex-direction: column;
       justify-content: center;
       align-items: flex-start;
-      height: 70%;
+      height: 65%;
 
       h2{
-        font-size: 2rem;
+        font-size: 2.5rem;
+        line-height: 2.6rem;
+        font-weight: 300;
       }
     }
 
     .user-freq{
-      height: 30%;
+      height: 35%;
       flex-direction: column;
       justify-content: space-evenly;
       align-items: flex-start;
@@ -241,5 +250,20 @@ main {
 
   .card-info{
     padding: 1rem;
+
+    .stats{
+      display: flex;
+      flex-direction: column;
+      justify-content:center;
+      align-items: flex-start;
+
+
+      .current-time{
+        font-size: 3rem;
+      }
+      .previous-time{
+        font-size: 0.75rem;
+      }
+    }
   }
 }
